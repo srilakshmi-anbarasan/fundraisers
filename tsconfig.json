@@ -1,26 +1,37 @@
 {
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
-    "target": "esnext",               // modern JS target (keep)
-    "module": "nodenext",             // ES module system (keep)
-    "rootDir": "src",
-    "outDir": "dist",
+    /* Core settings */
+    "target": "ESNext",                        // Use modern JS output
+    "module": "NodeNext",                      // Required for ES Modules in Node
+    "moduleResolution": "NodeNext",            // Ensures NodeNext resolves imports correctly
+    "rootDir": "src",                          // Where your TS source lives
+    "outDir": "dist",                          // Compiled JS output folder
     "strict": true,
 
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,   // <-- add this one
+    /* Type support */
+    "types": ["node", "express"],              // Ensures Node + Express types are included
+    "esModuleInterop": true,                   // Allows default imports from CommonJS libs
+    "skipLibCheck": true,                      // Prevents noise from type packages
+    "forceConsistentCasingInFileNames": true,  // Fixes case sensitivity issues
+    "resolveJsonModule": true,                 // Allows importing JSON
+    "allowSyntheticDefaultImports": true,      // Helps with default import compatibility
+
+    /* Safety & quality */
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
 
+    /* Output */
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force"
-  }
+
+    /* React (safe to leave for now) */
+    "jsx": "react-jsx"
+  },
+  "include": ["src"],                          // Include your TypeScript source folder
+  "exclude": ["node_modules", "dist"]          // Don’t compile these
 }
