@@ -5,6 +5,7 @@ Aggie Fundraisers is a centralized place for UC Davis student organizations to p
 Tech Stack: Next.js (frontend), Node.js + Express (backend), and MongoDB Atlas (database) Note: UI is still being updated
 
 **Live site:** https://aggie-fundraisers.vercel.app/
+
 <img width="2871" height="1355" alt="image" src="https://github.com/user-attachments/assets/4ccb91ce-b5d4-4186-aa81-77d57a192628" />
 
 
