@@ -11,9 +11,8 @@ Tech Stack: Next.js (frontend), Node.js + Express (backend), and MongoDB Atlas (
 
 ## Architecture Overview
 
-Add your system diagram here (high-level flow between the Next.js frontend, Express API, and MongoDB Atlas).
 
-- Suggested location: `docs/architecture-overview.png`
+- Suggested location: `architecture-overview.png`
 - Then reference it like this:
 
 ![Architecture Overview](docs/architecture-overview.png)
@@ -22,7 +21,6 @@ Add your system diagram here (high-level flow between the Next.js frontend, Expr
 
 ## Backend Architecture
 
-Add your backend-focused diagram here (routes/controllers/models, DB collections, request/response lifecycle, etc.).
 
 - Suggested location: `docs/backend-architecture.png`
 - Then reference it like this:
@@ -41,9 +39,3 @@ Add your backend-focused diagram here (routes/controllers/models, DB collections
 - **Week 7:** Deployment (Vercel for frontend; Render for backend)
 
 ---
-
-## Original Concept
-
-Create a single hub where:
-- **Clubs** can submit and manage fundraiser listings
-- **Students** can browse fundraisers conveniently and support campus causes through everyday purchases
