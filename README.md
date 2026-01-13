@@ -29,7 +29,7 @@ Tech Stack: Next.js (frontend), Node.js + Express (backend), and MongoDB Atlas (
 
 ---
 
-## Project Timeline / Roadmap
+## Project Timeline
 
 - **Week 1:** Database setup and connectivity
 - **Week 2:** Core backend CRUD + Postman testing
